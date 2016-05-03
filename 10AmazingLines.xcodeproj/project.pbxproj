@@ -15,6 +15,7 @@
 		94C1798A1CD836BD001EF289 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94C179881CD836BD001EF289 /* LaunchScreen.storyboard */; };
 		94C179951CD836BE001EF289 /* _0AmazingLinesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C179941CD836BE001EF289 /* _0AmazingLinesTests.swift */; };
 		94C179A01CD836BE001EF289 /* _0AmazingLinesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C1799F1CD836BE001EF289 /* _0AmazingLinesUITests.swift */; };
+		A1412286B9058AE8383F5E68 /* Pods_10AmazingLines.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90281EA5B7BEC212269BAB80 /* Pods_10AmazingLines.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		55C61306DC60D88093BDF386 /* Pods-10AmazingLines.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-10AmazingLines.debug.xcconfig"; path = "Pods/Target Support Files/Pods-10AmazingLines/Pods-10AmazingLines.debug.xcconfig"; sourceTree = "<group>"; };
+		90281EA5B7BEC212269BAB80 /* Pods_10AmazingLines.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_10AmazingLines.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C179791CD836BD001EF289 /* 10AmazingLines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 10AmazingLines.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C1797C1CD836BD001EF289 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94C1797E1CD836BD001EF289 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		94C1799B1CD836BE001EF289 /* 10AmazingLinesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 10AmazingLinesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C1799F1CD836BE001EF289 /* _0AmazingLinesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0AmazingLinesUITests.swift; sourceTree = "<group>"; };
 		94C179A11CD836BE001EF289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8F67F1F341F584E14F7B155 /* Pods-10AmazingLines.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-10AmazingLines.release.xcconfig"; path = "Pods/Target Support Files/Pods-10AmazingLines/Pods-10AmazingLines.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1412286B9058AE8383F5E68 /* Pods_10AmazingLines.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58967E93540427DD9096D37F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90281EA5B7BEC212269BAB80 /* Pods_10AmazingLines.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		94C179701CD836BD001EF289 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +96,8 @@
 				94C179931CD836BE001EF289 /* 10AmazingLinesTests */,
 				94C1799E1CD836BE001EF289 /* 10AmazingLinesUITests */,
 				94C1797A1CD836BD001EF289 /* Products */,
+				E29829C92DF5817E7AEE763E /* Pods */,
+				58967E93540427DD9096D37F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +143,15 @@
 			path = 10AmazingLinesUITests;
 			sourceTree = "<group>";
 		};
+		E29829C92DF5817E7AEE763E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55C61306DC60D88093BDF386 /* Pods-10AmazingLines.debug.xcconfig */,
+				C8F67F1F341F584E14F7B155 /* Pods-10AmazingLines.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94C179A41CD836BE001EF289 /* Build configuration list for PBXNativeTarget "10AmazingLines" */;
 			buildPhases = (
+				93F91E4708E7004CCC06D6C9 /* Check Pods Manifest.lock */,
 				94C179751CD836BD001EF289 /* Sources */,
 				94C179761CD836BD001EF289 /* Frameworks */,
 				94C179771CD836BD001EF289 /* Resources */,
+				60BBF29834146F70BBFAE541 /* Embed Pods Frameworks */,
+				D0D48F74B26BE7B7C182FE75 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60BBF29834146F70BBFAE541 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-10AmazingLines/Pods-10AmazingLines-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93F91E4708E7004CCC06D6C9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D0D48F74B26BE7B7C182FE75 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-10AmazingLines/Pods-10AmazingLines-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		94C179751CD836BD001EF289 /* Sources */ = {
@@ -403,6 +478,7 @@
 		};
 		94C179A51CD836BE001EF289 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55C61306DC60D88093BDF386 /* Pods-10AmazingLines.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 10AmazingLines/Info.plist;
@@ -414,6 +490,7 @@
 		};
 		94C179A61CD836BE001EF289 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8F67F1F341F584E14F7B155 /* Pods-10AmazingLines.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 10AmazingLines/Info.plist;
@@ -488,6 +565,7 @@
 				94C179A61CD836BE001EF289 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94C179A71CD836BE001EF289 /* Build configuration list for PBXNativeTarget "10AmazingLinesTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +574,7 @@
 				94C179A91CD836BE001EF289 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94C179AA1CD836BE001EF289 /* Build configuration list for PBXNativeTarget "10AmazingLinesUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +583,7 @@
 				94C179AC1CD836BE001EF289 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

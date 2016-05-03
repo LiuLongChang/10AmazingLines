@@ -1,0 +1,6 @@
+framework module Pods_10AmazingLines {
+  umbrella header "Pods-10AmazingLines-umbrella.h"
+
+  export *
+  module * { export * }
+}
